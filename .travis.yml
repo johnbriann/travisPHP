@@ -2,4 +2,4 @@ addons:
   browserstack:
     username: "johnnybrian1"
     access_key: "xEmBhGyQSEP7adERqx1k"
-    app_path: "application/tests/userlogin.php"
+    file_path: "application/tests/userlogin.php"
