@@ -1,0 +1,9 @@
+{
+"require": {
+"facebook/webdriver": "1.6.0"
+},
+"config": {
+"disable-tls": true,
+"secure-http": true
+}
+}

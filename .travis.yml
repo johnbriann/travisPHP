@@ -1,35 +1,5 @@
-language: php
-
-matrix:
-  include:
-    - php: 5.4
-      dist: trusty
-    - php: 5.5
-      dist: trusty
-    - php: 5.6
-    - php: 7.0
-    - php: 7.1
-    - php: 7.2
-    - php: 7.3
-
-before_script:
-  - pwd
-  - export cwd=`pwd`
-  - composer self-update
-  - cd ..
-  - pwd
-  - git clone https://github.com/johnbriann/travisPHP.git
-  - cd travisPHP
-  - rm -rf application/tests/_ci_phpunit_test
-  - composer update
-  - mv vendor/johnbriann/ci-phpunit-test vendor/johnbriann/ci-phpunit-test.tmp
-  - mv "$cwd" vendor/johnbriann/ci-phpunit-test
-  - php install.php
-
-script:
-  - cd application/tests
-  - ../../vendor/bin/phpunit --coverage-text
-
-after_script:
-  - cd ../..
-  - if [[ "$TRAVIS_PHP_VERSION" == "5.6" ]]; then php vendor/bin/coveralls -v; fi
+addons:
+  browserstack:
+    username: "johnnybrian1"
+    access_key: "xEmBhGyQSEP7adERqx1k"
+    app_path: "application/tests/"
