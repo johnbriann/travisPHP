@@ -1,0 +1,4 @@
+homepage slider
+admin add product color bit
+admin edit product
+admin order system
