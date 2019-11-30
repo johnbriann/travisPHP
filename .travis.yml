@@ -1,5 +1,10 @@
+language: php
+
 addons:
   browserstack:
     username: "johnnybrian1"
     access_key: "xEmBhGyQSEP7adERqx1k"
-    file_path: "application/tests/userlogin.php"
+    
+script:
+  - cd application/tests
+  - php userlogin.php
