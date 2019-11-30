@@ -19,7 +19,7 @@ before_script:
   - cd ..
   - pwd
   - git clone https://github.com/kenjis/ci-app-for-ci-phpunit-test.git
-  - cd ci-app-for-ci-phpunit-test
+  - cd travisPHP
   - rm application/tests/_ci_phpunit_test
   - composer update
   - mv vendor/kenjis/ci-phpunit-test vendor/kenjis/ci-phpunit-test.tmp
