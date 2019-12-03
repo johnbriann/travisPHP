@@ -23,7 +23,7 @@ $web_driver = RemoteWebDriver::create(
 $web_driver->manage()->window()->maximize();
 $web_driver->get("http://webmatech.com/project101/login");
 
-$element = $web_driver->findElement(WebDriverBy::id("email_loginx"));
+$element = $web_driver->findElement(WebDriverBy::id("email_login"));
 if($element){
 	$element->sendKeys("jcgalleries.testemail1@gmail.com");
 	$submit_user = $web_driver->findElement(WebDriverBy::id("login-me"))->click();
