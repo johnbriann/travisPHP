@@ -25,13 +25,13 @@ $web_driver->get("https://yentna.com/login");
 
 $element = $web_driver->findElement(WebDriverBy::id("email_login"));
 if($element){
-	$element->sendKeys("jcgalleries.testemail1@gmail.com");
+	$element->sendKeys("mark.hanson9888@gmail.com");
 	$submit_user = $web_driver->findElement(WebDriverBy::id("login-me"))->click();
 	if($submit_user){
 		sleep(5);
 		$element2 = $web_driver->findElement(WebDriverBy::id("password_login"));
 		if($element2){
-			$element2->sendKeys("123456");
+			$element2->sendKeys("Passwor!");
 			$submit_pass = $web_driver->findElement(WebDriverBy::id("login-me"))->click();
 			if($submit_pass){
 				sleep(2);
