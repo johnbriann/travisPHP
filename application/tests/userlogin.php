@@ -21,7 +21,7 @@ $web_driver = RemoteWebDriver::create(
 	$caps
 );
 $web_driver->manage()->window()->maximize();
-$web_driver->get("http://webmatech.com/project101/login");
+$web_driver->get("https://yentna.com/login");
 
 $element = $web_driver->findElement(WebDriverBy::id("email_login"));
 if($element){
@@ -35,7 +35,7 @@ if($element){
 			$submit_pass = $web_driver->findElement(WebDriverBy::id("login-me"))->click();
 			if($submit_pass){
 				sleep(2);
-				$web_driver->get("https://plandstudios.com/project101/customer/dashboard");
+				$web_driver->get("https://yentna.com/dashboard");
 			}
 		}
 	}
