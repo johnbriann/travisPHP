@@ -36,6 +36,7 @@ if($element){
 			if($submit_pass){
 				sleep(2);
 				$web_driver->get("https://yentna.com/dashboard");
+				
 			}
 		}
 	}
