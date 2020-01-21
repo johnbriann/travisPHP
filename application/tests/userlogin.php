@@ -35,7 +35,7 @@ if($element){
 			$submit_pass = $web_driver->findElement(WebDriverBy::id("login-me"))->click();
 			if($submit_pass){
 				sleep(2);
-				$web_driver->get("https://yentna.com/dashboard");
+				$web_driver->get("https://yentna.com/guide/dashboard");
 				
 			}
 		}
