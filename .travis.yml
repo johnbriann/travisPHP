@@ -7,4 +7,5 @@ addons:
     
     
 script:
-  - "curl -H 'Content-Type: application/json' --request POST --data \"app\": \"bs://21d5fe7f15386caf6eb4d944d973e8eb8a0c9ec3\"  \"https://api-cloud.browserstack.com/app-automate/xcuitest/build\""
+    - "curl -H 'Content-Type: application/json' -X POST  -d '{\"app\": \"bs://21d5fe7f15386caf6eb4d944d973e8eb8a0c9ec3\", \"deviceLogs\" : \"true\", \"testSuite\": \"bs://46a068d93be31940e64047d4e13854ac11b873fa\", \"devices\" : [\"iPhone 11 Pro Max-13\"]}' \"https://api-cloud.browserstack.com/app-automate/xcuitest/build\"  -u \"touseefiosdev1:tsKsjvTpmoyh86zyH9nb\""
+  
